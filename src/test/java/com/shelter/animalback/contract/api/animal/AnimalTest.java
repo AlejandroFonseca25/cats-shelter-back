@@ -38,6 +38,7 @@ public class AnimalTest {
         MockMvcTestTarget testTarget = new MockMvcTestTarget();
         testTarget.setControllers(animalController);
         context.setTarget(testTarget);
+        System.setProperty("pact.verifier.publishResults", "true");
     }
 
     @TestTemplate
